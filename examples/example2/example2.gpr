@@ -1,4 +1,4 @@
-with "Lua";
+with "lua";
 
 project Example2 is
 
@@ -14,9 +14,5 @@ project Example2 is
                                         "-gnatwa",
                                         "-gnatyg");
     end Compiler;
-
-    package Linker is
-       for Default_Switches("ada") use ("-L../..", "-llua");
-    end Linker;
 
 end Example2;

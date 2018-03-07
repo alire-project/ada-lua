@@ -14,4 +14,8 @@ project Lua is
                                         "-gnatyg");
     end Compiler;
 
+    package Linker is
+       for Linker_Options use ("-llua5.3");
+    end Linker;
+
 end Lua;
